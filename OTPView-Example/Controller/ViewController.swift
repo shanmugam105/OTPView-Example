@@ -10,11 +10,6 @@ import UIKit
 import NCOTPView
 
 class ViewController: UIViewController {
-    let otpView: NCOTPView = {
-        let view = NCOTPView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
     @IBOutlet weak var otpView1: NCOTPView!
     @IBOutlet weak var submitButton: UIButton!
     @IBAction func submitOtp(_ sender: Any) {
@@ -24,7 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(otpView)
         
         otpView1.configureView(focus: UIColor.blue.cgColor,
                               normal: UIColor.lightGray.cgColor,

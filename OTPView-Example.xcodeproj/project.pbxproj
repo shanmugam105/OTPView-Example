@@ -11,6 +11,9 @@
 		040AD86A274100C900FD2C26 /* NCOTPView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD863274100C900FD2C26 /* NCOTPView.framework */; };
 		040AD86B274100C900FD2C26 /* NCOTPView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD863274100C900FD2C26 /* NCOTPView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		040AD870274100DF00FD2C26 /* NCOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FC026BBE5BC0093F23C /* NCOTPView.swift */; };
+		040AD8742741106D00FD2C26 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 040AD8712741106D00FD2C26 /* LICENSE.txt */; };
+		040AD8752741106E00FD2C26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 040AD8722741106D00FD2C26 /* README.md */; };
+		040AD8762741106E00FD2C26 /* NCOTPView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 040AD8732741106D00FD2C26 /* NCOTPView.podspec */; };
 		84D05FA926BBE4AD0093F23C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FA826BBE4AD0093F23C /* AppDelegate.swift */; };
 		84D05FAB26BBE4AD0093F23C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */; };
 		84D05FAD26BBE4AD0093F23C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FAC26BBE4AD0093F23C /* ViewController.swift */; };
@@ -47,6 +50,9 @@
 		040AD863274100C900FD2C26 /* NCOTPView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCOTPView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		040AD865274100C900FD2C26 /* NCOTPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCOTPView.h; sourceTree = "<group>"; };
 		040AD866274100C900FD2C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040AD8712741106D00FD2C26 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = SOURCE_ROOT; };
+		040AD8722741106D00FD2C26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		040AD8732741106D00FD2C26 /* NCOTPView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCOTPView.podspec; sourceTree = SOURCE_ROOT; };
 		84D05FA526BBE4AD0093F23C /* OTPView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTPView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D05FA826BBE4AD0093F23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 		84D05FBD26BBE4D50093F23C /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				040AD8712741106D00FD2C26 /* LICENSE.txt */,
+				040AD8732741106D00FD2C26 /* NCOTPView.podspec */,
+				040AD8722741106D00FD2C26 /* README.md */,
 				84D05FB126BBE4AE0093F23C /* Assets.xcassets */,
 				84D05FB326BBE4AE0093F23C /* LaunchScreen.storyboard */,
 				84D05FB626BBE4AE0093F23C /* Info.plist */,
@@ -251,7 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AD8742741106D00FD2C26 /* LICENSE.txt in Resources */,
 				84D05FB526BBE4AE0093F23C /* LaunchScreen.storyboard in Resources */,
+				040AD8752741106E00FD2C26 /* README.md in Resources */,
+				040AD8762741106E00FD2C26 /* NCOTPView.podspec in Resources */,
 				84D05FB226BBE4AE0093F23C /* Assets.xcassets in Resources */,
 				84D05FB026BBE4AD0093F23C /* Main.storyboard in Resources */,
 			);
