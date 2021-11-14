@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AD867274100C900FD2C26 /* NCOTPView.h in Headers */ = {isa = PBXBuildFile; fileRef = 040AD865274100C900FD2C26 /* NCOTPView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		040AD86A274100C900FD2C26 /* NCOTPView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD863274100C900FD2C26 /* NCOTPView.framework */; };
+		040AD86B274100C900FD2C26 /* NCOTPView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD863274100C900FD2C26 /* NCOTPView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		040AD870274100DF00FD2C26 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FC026BBE5BC0093F23C /* OTPView.swift */; };
 		84D05FA926BBE4AD0093F23C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FA826BBE4AD0093F23C /* AppDelegate.swift */; };
 		84D05FAB26BBE4AD0093F23C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */; };
 		84D05FAD26BBE4AD0093F23C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05FAC26BBE4AD0093F23C /* ViewController.swift */; };
@@ -15,7 +19,34 @@
 		84D05FB526BBE4AE0093F23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D05FB326BBE4AE0093F23C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		040AD868274100C900FD2C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D05F9D26BBE4AD0093F23C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040AD862274100C900FD2C26;
+			remoteInfo = NCOTPView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040AD86C274100C900FD2C26 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				040AD86B274100C900FD2C26 /* NCOTPView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		040AD863274100C900FD2C26 /* NCOTPView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCOTPView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040AD865274100C900FD2C26 /* NCOTPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCOTPView.h; sourceTree = "<group>"; };
+		040AD866274100C900FD2C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D05FA526BBE4AD0093F23C /* OTPView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTPView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D05FA826BBE4AD0093F23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,23 +55,43 @@
 		84D05FB126BBE4AE0093F23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D05FB426BBE4AE0093F23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D05FB626BBE4AE0093F23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D05FC026BBE5BC0093F23C /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84D05FA226BBE4AD0093F23C /* Frameworks */ = {
+		040AD860274100C900FD2C26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84D05FA226BBE4AD0093F23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040AD86A274100C900FD2C26 /* NCOTPView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040AD864274100C900FD2C26 /* NCOTPView */ = {
+			isa = PBXGroup;
+			children = (
+				84D05FC026BBE5BC0093F23C /* OTPView.swift */,
+				040AD865274100C900FD2C26 /* NCOTPView.h */,
+				040AD866274100C900FD2C26 /* Info.plist */,
+			);
+			path = NCOTPView;
+			sourceTree = "<group>";
+		};
 		84D05F9C26BBE4AD0093F23C = {
 			isa = PBXGroup;
 			children = (
 				84D05FA726BBE4AD0093F23C /* OTPView-Example */,
+				040AD864274100C900FD2C26 /* NCOTPView */,
 				84D05FA626BBE4AD0093F23C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				84D05FA526BBE4AD0093F23C /* OTPView-Example.app */,
+				040AD863274100C900FD2C26 /* NCOTPView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,20 +108,81 @@
 		84D05FA726BBE4AD0093F23C /* OTPView-Example */ = {
 			isa = PBXGroup;
 			children = (
-				84D05FA826BBE4AD0093F23C /* AppDelegate.swift */,
-				84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */,
-				84D05FAC26BBE4AD0093F23C /* ViewController.swift */,
-				84D05FAE26BBE4AD0093F23C /* Main.storyboard */,
-				84D05FB126BBE4AE0093F23C /* Assets.xcassets */,
-				84D05FB326BBE4AE0093F23C /* LaunchScreen.storyboard */,
-				84D05FB626BBE4AE0093F23C /* Info.plist */,
+				84D05FBC26BBE4C30093F23C /* Delegate */,
+				84D05FBF26BBE5250093F23C /* Controller */,
+				84D05FBE26BBE5140093F23C /* Storyboard */,
+				84D05FBD26BBE4D50093F23C /* Global */,
 			);
 			path = "OTPView-Example";
 			sourceTree = "<group>";
 		};
+		84D05FBC26BBE4C30093F23C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				84D05FA826BBE4AD0093F23C /* AppDelegate.swift */,
+				84D05FAA26BBE4AD0093F23C /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		84D05FBD26BBE4D50093F23C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				84D05FB126BBE4AE0093F23C /* Assets.xcassets */,
+				84D05FB326BBE4AE0093F23C /* LaunchScreen.storyboard */,
+				84D05FB626BBE4AE0093F23C /* Info.plist */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		84D05FBE26BBE5140093F23C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84D05FAE26BBE4AD0093F23C /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84D05FBF26BBE5250093F23C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84D05FAC26BBE4AD0093F23C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		040AD85E274100C900FD2C26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040AD867274100C900FD2C26 /* NCOTPView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		040AD862274100C900FD2C26 /* NCOTPView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040AD86F274100C900FD2C26 /* Build configuration list for PBXNativeTarget "NCOTPView" */;
+			buildPhases = (
+				040AD85E274100C900FD2C26 /* Headers */,
+				040AD85F274100C900FD2C26 /* Sources */,
+				040AD860274100C900FD2C26 /* Frameworks */,
+				040AD861274100C900FD2C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCOTPView;
+			productName = NCOTPView;
+			productReference = 040AD863274100C900FD2C26 /* NCOTPView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		84D05FA426BBE4AD0093F23C /* OTPView-Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D05FB926BBE4AE0093F23C /* Build configuration list for PBXNativeTarget "OTPView-Example" */;
@@ -77,10 +190,12 @@
 				84D05FA126BBE4AD0093F23C /* Sources */,
 				84D05FA226BBE4AD0093F23C /* Frameworks */,
 				84D05FA326BBE4AD0093F23C /* Resources */,
+				040AD86C274100C900FD2C26 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				040AD869274100C900FD2C26 /* PBXTargetDependency */,
 			);
 			name = "OTPView-Example";
 			productName = "OTPView-Example";
@@ -97,6 +212,9 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Success Resource Pte Ltd.";
 				TargetAttributes = {
+					040AD862274100C900FD2C26 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					84D05FA426BBE4AD0093F23C = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -116,11 +234,19 @@
 			projectRoot = "";
 			targets = (
 				84D05FA426BBE4AD0093F23C /* OTPView-Example */,
+				040AD862274100C900FD2C26 /* NCOTPView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		040AD861274100C900FD2C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D05FA326BBE4AD0093F23C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +260,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		040AD85F274100C900FD2C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040AD870274100DF00FD2C26 /* OTPView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D05FA126BBE4AD0093F23C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +279,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040AD869274100C900FD2C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040AD862274100C900FD2C26 /* NCOTPView */;
+			targetProxy = 040AD868274100C900FD2C26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84D05FAE26BBE4AD0093F23C /* Main.storyboard */ = {
@@ -166,6 +308,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		040AD86D274100C900FD2C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NCOTPView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.NCOTPView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		040AD86E274100C900FD2C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NCOTPView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.NCOTPView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		84D05FB726BBE4AE0093F23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,9 +483,11 @@
 		84D05FBA26BBE4AE0093F23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "OTPView-Example/Info.plist";
+				INFOPLIST_FILE = "OTPView-Example/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +502,11 @@
 		84D05FBB26BBE4AE0093F23C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "OTPView-Example/Info.plist";
+				INFOPLIST_FILE = "OTPView-Example/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		040AD86F274100C900FD2C26 /* Build configuration list for PBXNativeTarget "NCOTPView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040AD86D274100C900FD2C26 /* Debug */,
+				040AD86E274100C900FD2C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84D05FA026BBE4AD0093F23C /* Build configuration list for PBXProject "OTPView-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
