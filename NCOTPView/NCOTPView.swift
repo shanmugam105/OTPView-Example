@@ -17,7 +17,6 @@ public final class NCOTPView: UIView {
         return stack
     }()
     
-    // var otpCount: Int = 4
     public var getOtp: ((_ otp: String, _ valid: Bool) -> Void)?
     private var focusColor: CGColor = UIColor.yellow.cgColor
     private var normalColor: CGColor = UIColor.lightGray.cgColor
@@ -66,7 +65,6 @@ extension NCOTPView: UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ textField: UITextField) {
         stackView.arrangedSubviews.forEach {
             guard let newTextField = $0 as? UITextField else { return }
-            print(newTextField.tag, textField.tag)
             newTextField.tag == textField.tag ? (newTextField.layer.borderColor = focusColor):(newTextField.layer.borderColor = normalColor)
         }
         textField.selectAll(self)

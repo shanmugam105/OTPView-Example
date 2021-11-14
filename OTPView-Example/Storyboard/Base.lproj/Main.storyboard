@@ -27,7 +27,6 @@
                             </button>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvc-EA-CP3" customClass="NCOTPView" customModule="NCOTPView">
                                 <rect key="frame" x="50" y="189" width="314" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="TMy-iG-aeW"/>
                                 </constraints>
