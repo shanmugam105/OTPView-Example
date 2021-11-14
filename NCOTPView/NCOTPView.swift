@@ -8,12 +8,11 @@
 
 import UIKit
 
-public final class OTPView: UIView {
+public final class NCOTPView: UIView {
     
     private let stackView: UIStackView = {
         let stack = UIStackView()
-        stack.distribution = .fillEqually
-        stack.spacing = 5
+        stack.distribution = .equalSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
@@ -23,7 +22,11 @@ public final class OTPView: UIView {
     private var focusColor: CGColor = UIColor.yellow.cgColor
     private var normalColor: CGColor = UIColor.lightGray.cgColor
     
-    public func configureView(focus color1: CGColor, normal color2: CGColor, otpCount: Int, secure: Bool = false) {
+    public func configureView(focus color1: CGColor,
+                              normal color2: CGColor,
+                              backgroundColor: UIColor = UIColor.lightGray.withAlphaComponent(0.1),
+                              otpCount: Int,
+                              secure: Bool = false) {
         addSubview(stackView)
         focusColor = color1
         normalColor = color2
@@ -48,14 +51,18 @@ public final class OTPView: UIView {
                 texfield.layer.cornerRadius = 4
                 texfield.translatesAutoresizingMaskIntoConstraints = false
                 texfield.textColor = .black
+                texfield.backgroundColor = backgroundColor
+                texfield.tintColor = .clear
                 return texfield
             }()
+            addDoneButtonOnKeyboard(for: textField)
+            NSLayoutConstraint.activate([textField.widthAnchor.constraint(equalToConstant: frame.height)])
             stackView.addArrangedSubview(textField)
         }
     }
 }
 
-extension OTPView: UITextFieldDelegate {
+extension NCOTPView: UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ textField: UITextField) {
         stackView.arrangedSubviews.forEach {
             guard let newTextField = $0 as? UITextField else { return }
@@ -99,7 +106,7 @@ extension OTPView: UITextFieldDelegate {
     }
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if Int(string) == nil { return false }
+        if Int(string) == nil && string != "" { return false }
         if string.count == 1 {
             return range.location == 0
         } else if string.count == stackView.arrangedSubviews.count {
@@ -114,4 +121,21 @@ extension OTPView: UITextFieldDelegate {
         }
         return false
     }
+}
+
+extension NCOTPView {
+    func addDoneButtonOnKeyboard(for textField: UITextField){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        doneToolbar.barStyle = .default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(hideKeyboard))
+        
+        let items = [flexSpace, done]
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        textField.inputAccessoryView = doneToolbar
+    }
+    @objc func hideKeyboard(){ endEditing(true) }
 }

@@ -10,11 +10,13 @@ import UIKit
 import NCOTPView
 
 class ViewController: UIViewController {
-    let otpView: OTPView = {
-        let view = OTPView()
+    let otpView: NCOTPView = {
+        let view = NCOTPView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    @IBOutlet weak var otpView1: NCOTPView!
+    @IBOutlet weak var submitButton: UIButton!
     @IBAction func submitOtp(_ sender: Any) {
         
     }
@@ -24,17 +26,14 @@ class ViewController: UIViewController {
         
         view.addSubview(otpView)
         
-        NSLayoutConstraint.activate([
-            otpView.heightAnchor.constraint(equalToConstant: 50),
-            otpView.widthAnchor.constraint(equalToConstant: 200),
-            otpView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            otpView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-        otpView.configureView(focus: UIColor.blue.cgColor,
+        otpView1.configureView(focus: UIColor.blue.cgColor,
                               normal: UIColor.lightGray.cgColor,
-                              otpCount: 4)
-        otpView.getOtp = { otp, valid in
+                              backgroundColor: .blue.withAlphaComponent(0.1),
+                              otpCount: 4,
+                              secure: false)
+        otpView1.getOtp = { otp, valid in
             print(otp, valid)
+            self.submitButton.isHidden = !valid
         }
     }
 }
