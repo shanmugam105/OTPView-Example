@@ -1,5 +1,5 @@
 
-# Awesome Toggle Switch
+# Awesome OTP View
 ## Usage
 
 ### installation

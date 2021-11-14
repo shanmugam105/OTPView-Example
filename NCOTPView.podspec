@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NCOTPView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Awesome otp input fields"
   spec.description  = "You can include in your project."
   spec.homepage     = "https://github.com/shanmugam105/OTPView-Example"
